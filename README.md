@@ -1,9 +1,14 @@
-<h1>Poly Language Learning Robot</h1>
-<h3>To Do (PJ)</h3>
-<li>Set up Raspi</li>
-<h3>To Do (Eric)</h3>
-<li>CAD</li>
-<li>setup platformio on vs code</li>
-<h3>To Do (Joshua)</h3>
-<li>CAD</li>
-<li>setup platformio on vs code</li>
+# Poly Language Learning Robot
+
+## To-Dos
+
+### Hardware
+- [ ] Setup Raspi (PJ)
+- [ ] Connect Raspi with Arduino (PJ)
+
+### Software
+- [ ] Install Platformio (Eric & Josh)
+- [ ] Familiarize with Git (Eric & Josh)
+
+### General
+- [ ] Order Microphone, Speaker, Display
