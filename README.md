@@ -5,6 +5,7 @@
 ### Hardware
 - [ ] Setup Raspi (PJ)
 - [ ] Connect Raspi with Arduino (PJ)
+- [ ] Setup Translation Prototype
 
 ### Software
 - [ ] Install Platformio (Eric & Josh)
