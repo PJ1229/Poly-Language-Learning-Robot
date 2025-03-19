@@ -13,3 +13,7 @@
 
 ### General
 - [ ] Order Microphone, Speaker, Display
+
+
+### Software
+- Audio to Text: https://whisper.ggerganov.com/
