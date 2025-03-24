@@ -1,22 +1,13 @@
 # Poly Language Learning Robot
 
-## To-Dos
-
-### Hardware
-- [ ] Setup Audio to Text Software
-- [ ] Setup Raspi (PJ)
-- [ ] Connect Raspi with Arduino (PJ)
-
-### Software
-- [ ] Install Platformio (Eric & Josh)
-- [ ] Familiarize with Git (Eric & Josh)
-
-### General
-- [ ] Order Microphone, Speaker, Display
-<<<<<<< HEAD
-
-
-### Software
-- Audio to Text: https://whisper.ggerganov.com/
-=======
->>>>>>> 4a9ff612c0e0c8d7ff1146368b8eb546ae27a453
+## Set up
+- python3 -m venv venv
+- mac/linx: source venv/bin/activate
+- windows: venv\Scripts\activate
+- pip install pyaudio
+- cd recorder
+- cd ..
+- cd speech_to_text
+- put the poly_robot.json in the folder
+- pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client google-cloud-speech
+- python3 demo1.py
