@@ -12,7 +12,7 @@ credentials = service_account.Credentials.from_service_account_file(client_file)
 client = speech.SpeechClient(credentials=credentials)
 
 # Path to the new mono audio file
-audio_file = 'audio_sample_mono.wav'
+audio_file = 'audio.wav'
 
 # Read the audio file into memory
 with io.open(audio_file, 'rb') as f:
@@ -22,7 +22,7 @@ with io.open(audio_file, 'rb') as f:
 # Configure recognition settings
 config = speech.RecognitionConfig(
     encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
-    sample_rate_hertz=48000,  # Adjust to your file's sample rate
+    sample_rate_hertz=44100,  # Adjust to your file's sample rate
     language_code='en-US'
 )
 
