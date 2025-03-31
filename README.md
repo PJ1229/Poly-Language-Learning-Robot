@@ -13,8 +13,7 @@
 - python3 demo1.py
 
 ## Run
-- cd free-translate-api
+- cd speech to text
 - go run main.go to start hosting translation server
 - open new terminal
-- cd speech_to_text
 - run python3 speech_to_text.py

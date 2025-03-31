@@ -1,2 +1,19 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Ignore executable file
+google-translate
+
+# Project-specific ignores
 speech_to_text/poly_robot.json
 venv/
