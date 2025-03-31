@@ -13,9 +13,8 @@
 - python3 demo1.py
 
 ## Run
-- cd recorder
-- python3 recorder.py
-- move the audio.wav file into the speech_to_text folder
-- cd ..
+- cd free-translate-api
+- go run main.go to start hosting translation server
+- open new terminal
 - cd speech_to_text
-- python3 demo1.py
+- run python3 speech_to_text.py
