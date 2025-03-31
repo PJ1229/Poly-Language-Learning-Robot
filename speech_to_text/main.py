@@ -6,6 +6,8 @@ import json
 from google.oauth2 import service_account
 from google.cloud import speech
 from dataclasses import dataclass, asdict
+import torch
+from TTS.api import TTS
 
 @dataclass
 class StreamParams:
@@ -104,3 +106,18 @@ if __name__ == "__main__":
     
     translated_text = translate_text(transcript, "es")
     print("Translated Text:", translated_text)
+
+    # Define device (either 'cuda' if a GPU is available, or 'cpu' if not)
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+
+    # Init TTS with the target model name
+    tts = TTS(model_name="tts_models/es/css10/vits", progress_bar=False).to(device)
+
+    # Define output path for the generated audio file
+    OUTPUT_PATH = "output.wav"  # Change to Spanish output file name
+    
+    # Run TTS
+    tts.tts_to_file(text=translated_text, file_path=OUTPUT_PATH)
+
+    # Generate speech with voice cloning in Spanish
+    tts.tts_to_file(translated_text, speaker_wav="my/cloning/audio.wav", language="es", file_path="output_cloning.wav")
