@@ -100,7 +100,9 @@ if __name__ == "__main__":
     audio_path = "audio.wav"
     service_account_file = "poly_robot.json"
     
-    recorder.record(5, audio_path)
+    # Uncomment to record audio instead of using a pre-recorded file
+    # recorder.record(5, audio_path)
+    
     transcript = transcribe_audio(audio_path, service_account_file)
     print("Transcript:", transcript)
     
@@ -114,7 +116,7 @@ if __name__ == "__main__":
     tts = TTS(model_name="tts_models/es/css10/vits", progress_bar=False).to(device)
 
     # Define output path for the generated audio file
-    OUTPUT_PATH = "output.wav"  # Change to Spanish output file name
+    OUTPUT_PATH = "output.wav"
     
     # Run TTS
     tts.tts_to_file(text=translated_text, file_path=OUTPUT_PATH)
