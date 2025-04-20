@@ -101,7 +101,7 @@ if __name__ == "__main__":
     service_account_file = "poly_robot.json"
     
     # Uncomment to record audio instead of using a pre-recorded file
-    # recorder.record(5, audio_path)
+    recorder.record(5, audio_path)
     
     transcript = transcribe_audio(audio_path, service_account_file)
     print("Transcript:", transcript)
